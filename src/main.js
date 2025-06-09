@@ -12,6 +12,10 @@ import '@/assets/css/global.scss';
 import NProgress from 'nprogress';
 import '@/assets/css/nprogress.css';
 
+import VConsole from 'vconsole';
+const vConsole = new VConsole();
+console.log(vConsole);
+
 window.resetApp = () => {
   localStorage.clear();
   indexedDB.deleteDatabase('yesplaymusic');
